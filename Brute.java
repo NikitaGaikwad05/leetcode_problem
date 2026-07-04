@@ -1,4 +1,6 @@
 //To find the largest element in Array using Brute Force solution 
+//TimeComplexity: O(N log N)
+//SpaceComplexity: O(1)
 import java.util.Arrays;
 class Brute{
     public static int sortarry(int[] arr){
