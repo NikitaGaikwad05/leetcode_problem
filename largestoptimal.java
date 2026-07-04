@@ -1,4 +1,6 @@
 //this optimal solution to find the largest element in the array
+//TimeComplexity: O(n)
+//SpaceComplexity: O(1)
 import java.util.*;
 class Main {
     public static int sort(int[] arr,int n){
