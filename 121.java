@@ -6,12 +6,12 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 //SpaceComplexity : O(1)
 class Solution 
 {
-    public int maxProfit(int[] prices) 
+    public int stockbuySell(int[] prices) 
     {
       // Initialize the minimum price to a large number
          int minprice=Integer.MAX_VALUE;
        // Initialize the maximum profit to 0
-         int maxprofit=0;
+         int maxProfit=0;
       // Traverse each price in the array
          for(int price:prices)
          {
@@ -23,10 +23,10 @@ class Solution
             // Else calculate profit and update maxProfit if it's greater
             else
             {
-                maxprofit=Math.max(maxprofit,price-minprice);
+                maxProfit= Math.max(maxProfit, price-minprice);
             }
         }
         // Return the maximum profit found
-          return maxprofit;
+          return maxProfit;
     }
 }
