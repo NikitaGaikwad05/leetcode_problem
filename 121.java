@@ -4,20 +4,25 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.*/
 //TimeComplexity: O(n)
 //SpaceComplexity : O(1)
-class Solution {
-    public int maxProfit(int[] prices) {
+class Solution 
+{
+    public int maxProfit(int[] prices) 
+    {
       // Initialize the minimum price to a large number
-        int minprice=Integer.MAX_VALUE;
+         int minprice=Integer.MAX_VALUE;
        // Initialize the maximum profit to 0
-        int maxprofit=0;
+         int maxprofit=0;
       // Traverse each price in the array
-        for(int price:prices){
+         for(int price:prices)
+         {
           // If current price is less than minPrice, update minPrice
-            if(price<minprice){
+            if(price<minprice)
+            {
                 minprice=price;
             }
             // Else calculate profit and update maxProfit if it's greater
-            else{
+            else
+            {
                 maxprofit=Math.max(maxprofit,price-minprice);
             }
         }
