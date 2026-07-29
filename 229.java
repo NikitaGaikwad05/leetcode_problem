@@ -27,7 +27,8 @@ class Solution {
                 cnt2--;
             }
         }
-        
+        cnt1=0;
+        cnt2=0;
         for(int i=0;i<n;i++){
             if(nums[i]==ele1)cnt1++;
             if(nums[i]==ele2)cnt2++;
@@ -35,7 +36,7 @@ class Solution {
         int mini=n/3+1;
         List<Integer>result=new ArrayList<>();
         if(cnt1>=mini)result.add(ele1);
-        if(cnt2>mini)result.add(ele2);
+        if(cnt2>=mini)result.add(ele2);
         return result;
     }
 }
